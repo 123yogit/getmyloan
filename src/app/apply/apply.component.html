@@ -1,0 +1,63 @@
+<div class="container">
+    <form [formGroup]="loanForm" (ngSubmit)="submitForm()">
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" required>
+       
+    </mat-form-field><br>
+
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" required>
+       
+    </mat-form-field><br>
+
+    
+    <mat-form-field>
+        <mat-label>Pan</mat-label>
+        <input matInput formControlName="loanAmount" required>
+       
+    </mat-form-field><br>
+    
+    <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <input matInput formControlName="loanAmount" required>
+       
+    </mat-form-field><br>
+
+    
+    <mat-form-field>
+        <mat-label>Loan Amount</mat-label>
+        <input matInput formControlName="loanAmount" required>
+       
+    </mat-form-field><br>
+    
+    
+
+    <mat-form-field>
+        <mat-label>Loan Term (in months)</mat-label>
+        <input matInput formControlName="loanTerm" required>
+       
+            </mat-form-field><br>
+
+    <mat-form-field>
+        <mat-label>City</mat-label>
+        <input matInput formControlName="loanAmount" required>
+       
+    </mat-form-field><br>
+
+    <mat-checkbox> I accept the terms and conditions</mat-checkbox><br>
+
+    <button  class="mt-5 bg-warning"  mat-raised-button (click)="openPopup()" >Continue</button>
+
+</form>
+
+
+<div  class="mt-4"> 
+    <h5 class="text-center"> CHECK YOUR CREDIT SCORE</h5>
+
+    <div class="container mt-4 mx-5 row ">
+        <img src="https://www.tatacapital.com/content/dam/tata-capital-web/tc-banner/commercial/desktop/credit-score-desktop.jpg" class=" rounded-5 img-fluid " alt="...">
+        </div>
+        
+</div>

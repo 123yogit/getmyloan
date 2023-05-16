@@ -1,0 +1,89 @@
+<div class="container mt-4 mx-5 row">
+    <div class="ms-4 "> <img  src="https://www.tatacapital.com/content/dam/tata-capital-web/tc-banner/personal-loan/desktop/medical.jpg" class=" rounded-4 img-fluid" alt="...">
+
+</div>
+   
+    <h4 class="text-center ">Personal Loan EMI Calculator</h4>
+    <div class="col ms-5 rounded-4 shadow">
+        <form>
+            <mat-form-field>
+
+                <input class="" matInput type="number" [(ngModel)]="loanAmount" name="loanAmount"
+                    placeholder="Loan Amount">
+
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+
+                <input matInput type="number" [(ngModel)]="interestRate" name="interestRate"
+                    placeholder="Interest Rate">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+
+                <input class="" matInput type="number" [(ngModel)]="loanTenure" name="loanTenure"
+                    placeholder="Loan Tenure">
+            </mat-form-field>
+            <br>
+            <button class="mt-2 my-2 bg-warning" mat-raised-button (click)="calculateEmi()">Calculate EMI</button>
+        </form>
+    </div>
+
+    <div class="col ms-2 rounded-4 shadow">
+        <div class="text-primary mt-5 fs-3"><span> EMI Amount:{{emi | currency:'INR'}}
+            </span>
+        </div>
+        <button class="mt-5  bg-warning" mat-raised-button (click)="apply()">Apply For Loan</button>
+    </div>
+</div>
+
+
+<div class="p-2 mt-4 secondary">
+    <h5 class="text-light  text-center"   > Overview    </h5>
+
+</div>
+
+<div class="container mt-2 ">
+    <h5>WHAT IS A PERSONAL LOAN?</h5>
+    <p>Looking for an instant way to fund your larger expenses? Get an instant personal loan!</p>
+    <p>But what is a personal loan? It is an attractive loan option that you can consider for various purposes without pledging any collateral. Whether you want to finance a medical emergency, take a much-needed family vacation, or give your home a long-awaited makeover, it  allows you to tackle your urgent financial needs with utmost ease.</p>
+    <p>At Tata capital, we strive to ease your financial worries with our range of multipurpose personal loans online. Get affordable and unsecured credit of up to Rs. 35 lakhs at attractive interest rates. The best part? We have made the loan process extremely convenient for you with our digital application process and easy-to-meet eligibility criteria.</p>
+    <p>Besides, we offer flexible loan tenure of up to 6 years, making your loan repayment much easier on your pocket. Get ready to experience a hassle-free loan process like never before – enjoy fast loan processing and customised instant personal loan offerings depending on your diverse financial needs.</p>
+    
+
+</div>
+
+
+<h1 class="text-center">Advantages</h1>
+
+<div class="row ">
+    <div class="col  shadow s rounded-4 mx-4 mt-2">
+        <h5>Instant Approval</h5>
+        <h6>A medical emergency needs instant cash. We provide instant approval on your application, once your documents are with us.
+</h6>
+
+    </div>
+    
+
+    <div class="col  shadow s rounded-4 mx-4 mt-2">
+       <h5> Care Now Repay Later</h5>
+       <h6>We provide flexibility to you in deciding the repayment options, loan amount, and tenure.</h6>
+        
+</div>
+
+<div class="col  shadow s rounded-4 mx-4 mt-2">
+    <h5>Minimal Paperwork </h5>
+    <h6>When you face any medical exigency, the last thing you want is to file paperwork to raise funds. Our medical loans are hassle and stress-free.</h6>
+     
+</div>
+
+
+<div class="col shadow s  rounded-4 mx-4 mt-2">
+    <h5>No Collateral </h5>
+    <h6>You can count on us during your tough times. No collateral or security is needed for a Medical Loan. </h6>
+     
+</div>
+
+  
+</div>
+
